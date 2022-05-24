@@ -10,3 +10,15 @@ body {
 .header {
     background-color: #1f2937;
 }
+
+.nav {
+    display: flex;
+}
+
+.left {
+    display: flex;
+}
+
+.header-img {
+    width: 50px;
+}
