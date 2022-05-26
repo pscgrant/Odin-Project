@@ -15,19 +15,26 @@ body {
 }
 
 .nav {
-    border: 1px solid blue;
+    border: 5px solid blue;
+    display: flex;
+    justify-content: space-between;
 }
 
 .left {
     color: #F9FAF8;
     font-size: 24px;
     border: 1px solid red;
+    display: flex;
 }
 
 .right {
     color: #E5E7EB;
     font-size: 18px;
     border: 1px solid red;
+}
+
+ul {
+    list-style: none;
 }
 
 .header-img {
