@@ -11,11 +11,9 @@ body {
 
 .header {
     background-color: #1f2937;
-    border: 1px solid red;
 }
 
 .nav {
-    border: 5px solid blue;
     display: flex;
     justify-content: space-between;
     margin-left: 200px;
@@ -25,14 +23,16 @@ body {
 .left {
     color: #F9FAF8;
     font-size: 24px;
-    border: 1px solid red;
     display: flex;
+}
+
+.header-text {
+    padding: 20px;
 }
 
 .right {
     color: #E5E7EB;
     font-size: 18px;
-    border: 1px solid red;
 }
 
 ul {
@@ -47,6 +47,5 @@ li {
 .header-img {
     width: 70px;
     height: 80px;
-    border: 1px solid red;
 }
 
