@@ -49,3 +49,16 @@ li {
     height: 80px;
 }
 
+
+/*Welcome*/
+
+.welcome-body {
+    background-color: #1f2937;
+    border: 1px bold red;
+    height: 500px;
+}
+
+.intro-text {
+    display: flex;
+
+}
