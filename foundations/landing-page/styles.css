@@ -54,11 +54,10 @@ li {
 
 .welcome-body {
     background-color: #1f2937;
-    border: 1px bold red;
     height: 500px;
 }
 
 .intro-text {
-    display: flex;
-
+    flex-direction: column;
+    padding: 20px 20px 15px 100px;
 }
