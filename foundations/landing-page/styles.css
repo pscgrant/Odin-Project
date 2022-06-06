@@ -36,3 +36,22 @@ footer span {
     padding-bottom: 20px;
 }
 
+/* Blue Div */
+.blue-div {
+    width: 70%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blue-div div {
+    display: flex;
+}
+.blue-div div .signup-div {
+    display: flex;
+    flex-direction: column;
+}
+.blue-div div div {
+    margin: 50px;
+}
