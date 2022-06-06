@@ -55,3 +55,14 @@ footer span {
 .blue-div div div {
     margin: 50px;
 }
+
+/* Quote Div */
+.quote-div {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quote-div div {
+    width: 50%;
+}
