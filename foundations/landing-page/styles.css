@@ -93,3 +93,33 @@ footer span {
 .main-div .main-header {
     margin: 0px auto;
 }
+
+/* Nav and header */
+nav {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    padding: 20px 0px;
+    justify-content: space-between;
+}
+.nav-link-div {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.header-div {
+    display: flex;
+    margin: auto;
+    width: auto;
+    height: 500px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-main-div {
+    width: 35%;
+}
+.header-main-div p {
+    margin: 20px;
+    margin-left: 0px;
+}
