@@ -66,3 +66,30 @@ footer span {
 .quote-div div {
     width: 50%;
 }
+
+/* Image Divs */
+.header .header-img {
+    width: 500px;
+}
+
+.ship-img {
+    width: 200px;
+}
+
+/* Main Body */
+.main-div {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 500px;
+}
+.main-div .pictures {
+    display: flex;
+    justify-content: space-around;
+}
+.main-div .main-header {
+    margin: 0px auto;
+}
