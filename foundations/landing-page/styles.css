@@ -178,3 +178,14 @@ a {
     font-size: 16px;
 }
 
+.footer {
+    text-align: center;
+    margin-top: auto;
+    background-color: #e5e7eb;
+}
+
+.footer-text {
+    padding: 32px;
+    background-color: #1f2937;
+    color: #e5e7eb;
+}
