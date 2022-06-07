@@ -79,6 +79,7 @@ a {
 
 .middle-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 450px;
@@ -116,4 +117,21 @@ a {
     font-size: 36px;
     font-weight: bolder;
     color: #1f2937;
+}
+
+.quote-container {
+    display: flex;
+    height: 350px;
+    background-color: #e5e7eb;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-text {
+    width: 750px;
 }
