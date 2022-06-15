@@ -34,7 +34,7 @@ typeof 10n; // "bigint"
 // The 8 basic data types in JS
 /* 
 number: for numbers of any kind: integer or floating-point
-bigint: is for integer numbers of arbitary length
+bigint: is for integer numbers of arbitrary length
 string: for strings. A string may have zero or more characters, there's no separate single-character type
 boolean: for true/false
 null: for unknown values-a standalone type that has a single value null
