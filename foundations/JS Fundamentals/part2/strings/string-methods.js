@@ -60,3 +60,23 @@ let text7 = text6.trim();
 
 
 
+// String padStart()
+// padStart() method pads a string with another string:
+// Note: the padStart() method is a string method. To pad a number, convert the number to a string first. 
+let text8 = "5";
+let padded = text8.padStart(4,"x"); // xxx5
+
+let text9 = "5";
+let padded2 = text9.padStart(4, "0"); // 0005
+
+// padEnd() method pads a string with another string
+let text10 = "5";
+let padded3 = text10.padEnd(4, "x"); // 5xxx
+
+
+
+// String charAt(): method returns the character at a specified index (position) in a string
+let text11 = "HELLO WORLD";
+let char = text11.charAt(0); // H
+
+
