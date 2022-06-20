@@ -1,4 +1,4 @@
-// Comparisons
+// Comparisons https://javascript.info/comparison
 // Greater/less than: a > b, a < b
 // Greater/less than or equals: a >= b, a <= b
 // Equals: a == b, note the double equality sign == means the equality test, while a single on a = b means an assignment. 
@@ -13,7 +13,12 @@ alert( 2 != 1); // true
 let result = 5 > 4; 
 alert( result ); // true
 
-// Conditionals 
+
+
+
+
+
+// Conditionals https://www.w3schools.com/js/js_if_else.asp
 // Use "if" to specify a block of code to be executed, if a specified condition is true
 // Use "else" to specify a block of code to be executed, if the same condition is false
 // use "else if" to specify a new condition to test, if the first condition is false
@@ -60,3 +65,66 @@ if (time < 10) {
 } else {
     greeting = "Good morning";
 };
+
+
+
+
+
+
+// Logical operators https://javascript.info/logical-operators
+
+// There are four logical operators : || (OR), && (AND), ! (NOT), ?? (Nullish Coalescing)
+
+// || (OR)
+// The "OR" operator is represented with two vertical line symbols
+result = a || b;
+// The logical OR is meant to manipulate boolean values only. If any of its arguments are "true", it returns "true", otherwise it returns "false"
+
+if ( 1 || 0 ) {
+    alert( 'truthy!' );
+}
+
+
+let hour = 9;
+
+if (hour < 10 || hour > 10) {
+    alert( 'The office is closed.' );
+}
+
+
+let hour1 = 12;
+let isWeekend = true;
+
+if (hour1 < 10 || hour1 > 18 || isWeekend) {
+    alert( 'The office is closed.' ); 
+}
+
+
+
+let firstName = "";
+let lastName = "";
+let nickName = "SuperCoder";
+
+alert( firstName || lastName || nickName || "Anonymous"); // SuperCoder because the first two are false, if all were false, Anonymous would show up.
+
+
+
+
+
+result = a && b;
+
+alert( true && true ); // true
+alert( false && true ); // false
+alert( true && false ); // false
+alert( false && false ); // false
+
+
+let hour2 = 12; 
+let minute = 30;
+
+if (hour == 12 && minute == 30) {
+    alert( 'The time is 12:30' );
+}
+
+
+
