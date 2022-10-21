@@ -18,3 +18,6 @@ rock, paper and scissor. Using a if else statement.
 Taking two parameters the playerSelection and computerSelction,
 and returning a string that declares the winner */
 
+function playRound(playerSelection, computerSelction) {
+    
+}
