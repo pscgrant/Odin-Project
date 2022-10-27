@@ -15,9 +15,9 @@ rock, paper and scissor. Using a if else statement.
 
 
 /* This function will run the game.
-Taking two parameters the playerSelection and computerSelction,
+Taking two parameters the playerSelection and computerSelection,
 and returning a string that declares the winner */
 
-function playRound(playerSelection, computerSelction) {
+function playRound(playerSelection, computerSelection) {
     
 }
