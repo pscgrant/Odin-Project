@@ -5,11 +5,11 @@ rock, paper and scissor. Using a if else statement.
  function getComputerChoice(){
     const randomNumber = Math.floor(Math.random() * 3);
     if (randomNumber == 1) {
-        return "Rock";
+        return "Rock".toLocaleLowerCase();
     } else if (randomNumber == 2) {
-        return "Paper";
+        return "Paper".toLocaleLowerCase();
     } else {
-        return "Scissors";
+        return "Scissors".toLocaleLowerCase();
     }
 };
 
@@ -21,34 +21,34 @@ and returning a string that declares the winner */
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
         return "It's a tie!"
-    } else if (playerSelection === "Rock") {
-        if (computerSelection === "Scissors") {
+    } else if (playerSelection === "Rock".toLocaleLowerCase()) {
+        if (computerSelection === "Scissors".toLocaleLowerCase()) {
             return "Rock wins! " + "You beat the computer."
         } else {
             return "Paper wins! " + "Sorry the computer beat you."
         }
-    } else if (playerSelection === "Paper") {
-        if (computerSelection === "Rock") {
+    } else if (playerSelection === "Paper".toLocaleLowerCase()) {
+        if (computerSelection === "Rock".toLocaleLowerCase()) {
             return "Paper wins! " + "You beat the computer."
         } else {
             return "Scissors wins! " + "Sorry the computer beat you."
         }
-    } else if (playerSelection === "Scissors") {
-        if (computerSelection === "Rock") {
+    } else if (playerSelection === "Scissors".toLocaleLowerCase()) {
+        if (computerSelection === "Rock".toLocaleLowerCase()) {
             return "Rock wins! " + "Sorry the computer beat you."
         } else {
             return "Scissors win! " + "You beat the computer."
         }
     }
-}
+};
 
 const playerSelection = prompt("Enter your selection of Rock, Paper or Scissors");
 const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection,computerSelection));
 
 
-function game() {
-    for (let i = 0; i < 5; i++) {
-        playRound(playerSelection,computerSelection);
-    }
-}
+// function game() {
+//     for (let i = 0; i < 5; i++) {
+//         playRound(playerSelection,computerSelection);
+//     }
+// };
