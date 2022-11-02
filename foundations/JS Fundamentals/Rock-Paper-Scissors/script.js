@@ -1,3 +1,8 @@
+let playerScore = 0;
+let computerScore = 0;
+let roundWinner = ''
+
+
 /*
 This function is for the computer to randomly choose between
 rock, paper and scissor. Using a if else statement.
@@ -41,6 +46,8 @@ function playRound(playerSelection, computerSelection) {
         }
     }
 };
+
+
 
 const playerSelection = prompt("Enter your selection of Rock, Paper or Scissors");
 const computerSelection = getComputerChoice();
