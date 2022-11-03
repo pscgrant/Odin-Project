@@ -50,21 +50,24 @@ and returning a string that declares the winner */
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
-        roundWinner = "It's a tie!"
+        // roundWinner = "It's a tie!"
+        return "It's a tie!"
     } else if (
         (playerSelection === "Rock".toLocaleLowerCase && computerSelection === "Scissors".toLocaleLowerCase) || 
         (playerSelection === "Scissors".toLocaleLowerCase && computerSelection === "Paper".toLocaleLowerCase) ||
         (playerSelection === "Paper".toLocaleLowerCase && computerSelection === "Rock".toLocaleLowerCase)
     ) {
         playerScore++
-        roundWinner = "player"
+        // roundWinner = "player"
+        return "Player wins!"
     } else if (
         (computerSelection === "Rock".toLocaleLowerCase && playerSelection === "Scissors".toLocaleLowerCase) ||
         (computerSelection === "Scissors".toLocaleLowerCase && playerSelection === "Paper".toLocaleLowerCase) ||
         (computerSelection === "Paper".toLocaleLowerCase && playerSelection === "Rock".toLocaleLowerCase)
     ) {
         computerScore++
-        roundWinner = "computer"
+        // roundWinner = "computer"
+        return "Computer wins!"
     }
 }
 
@@ -73,8 +76,8 @@ const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection,computerSelection));
 
 
-function game() {
-    for (let i = 0; i < 5; i++) {
-        playRound(playerSelection,computerSelection);
-    }
-};
+// function game() {
+//     for (let i = 0; i < 5; i++) {
+//         playRound(playerSelection,computerSelection);
+//     }
+// };
