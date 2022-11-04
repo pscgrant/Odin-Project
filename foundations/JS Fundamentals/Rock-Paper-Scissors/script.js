@@ -1,6 +1,6 @@
-let playerScore = 0;
-let computerScore = 0;
-roundWinner = ""
+let playerScore;
+let computerScore;
+
 
 /*
 This function is for the computer to randomly choose between
@@ -16,6 +16,10 @@ rock, paper and scissor. Using a if else statement.
         return "Scissors".toLocaleLowerCase();
     }
 };
+
+function userInput() {
+    playerSelection = prompt("Enter your selection of Rock, Paper or Scissors");
+}
 
 
 /* This function will run the game.
@@ -48,35 +52,15 @@ function playRound(playerSelection, computerSelection) {
     }
 };
 
-// function playRound(playerSelection, computerSelection) {
-//     if (playerSelection === computerSelection) {
-//         // roundWinner = "It's a tie!"
-//         return "It's a tie!"
-//     } else if (
-//         (playerSelection === "Rock".toLocaleLowerCase && computerSelection === "Scissors".toLocaleLowerCase) || 
-//         (playerSelection === "Scissors".toLocaleLowerCase && computerSelection === "Paper".toLocaleLowerCase) ||
-//         (playerSelection === "Paper".toLocaleLowerCase && computerSelection === "Rock".toLocaleLowerCase)
-//     ) {
-//         playerScore++
-//         // roundWinner = "player"
-//         return "Player wins!"
-//     } else if (
-//         (computerSelection === "Rock".toLocaleLowerCase && playerSelection === "Scissors".toLocaleLowerCase) ||
-//         (computerSelection === "Scissors".toLocaleLowerCase && playerSelection === "Paper".toLocaleLowerCase) ||
-//         (computerSelection === "Paper".toLocaleLowerCase && playerSelection === "Rock".toLocaleLowerCase)
-//     ) {
-//         computerScore++
-//         // roundWinner = "computer"
-//         return "Computer wins!"
-//     }
-// }
 
-let playerSelection = prompt("Enter your selection of Rock, Paper or Scissors");
 let computerSelection = getComputerChoice();
 console.log(playRound(playerSelection,computerSelection));
 
+game();
 
 function game() {
+    computerScore = 0;
+    playerScore = 0;
     for (let i = 0; i < 5; i++) {
         playRound(playerSelection,computerSelection);
     }
