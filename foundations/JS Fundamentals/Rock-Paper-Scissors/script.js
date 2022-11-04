@@ -40,7 +40,14 @@ function userInput() {
 
 /* This function will run the game.
 Taking two parameters the playerSelection and computerSelection,
-and returning a string that declares the winner */
+and returning a string that declares the winner 
+
+This new rendition is easier to read and does away with using 
+toLocaleLowerCase to just once per parameter with toLowerCase.
+
+Using just one else if instead of multiple else if and if then else inside is much better for someone to understand and faster.
+
+*/
 
 function playRound(playerSelection, computerSelection) {
     computerSelection = getComputerChoice().toLowerCase();
