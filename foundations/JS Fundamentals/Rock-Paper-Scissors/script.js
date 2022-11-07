@@ -3,6 +3,32 @@ let computerScore;
 let playerSelection;
 let computerSelection;
 
+game();
+
+function game() {
+    computerScore = 0;
+    playerScore = 0;
+    for (let i = 0; i < 5; i++) {
+        userInput();
+    }
+};
+console.log(declareWinner());
+
+
+function declareWinner() {
+    if (playerScore === computerScore){
+        alert (playerScore + "-"+ computerScore + "\nTie game!");
+        return playerScore + "-"+ computerScore + "\nTie game!";
+    } else if (playerScore > computerScore) {
+        alert (playerScore + "-" + computerScore + "\nYou win!");
+        return playerScore + "-" + computerScore + "\nYou win!";
+    } else {
+        alert (playerScore + "-" + computerScore + "\nSorry you lost");
+        return playerScore + "-" + computerScore + "\nSorry you lost";
+    }
+}
+
+
 
 /*
 This function is for the computer to randomly choose between
@@ -18,6 +44,10 @@ rock, paper and scissor. Using a if else statement.
         return "Scissors";
     }
 };
+
+
+
+
 
 /*
 This function is for the user to input
@@ -51,7 +81,7 @@ Using just one else if instead of multiple else if and if then else inside is mu
 
 function playRound(playerSelection, computerSelection) {
     computerSelection = getComputerChoice().toLowerCase();
-    playerSelection = playerSelection().toLowerCase();
+    playerSelection = playerSelection.toLowerCase();
     if (computerSelection == playerSelection) {
         alert ("It's a tie!");
         return "Tie game\nCompter Score: " + computerScore + "\nYour Score: " + playerScore;
@@ -61,10 +91,10 @@ function playRound(playerSelection, computerSelection) {
         (computerSelection == "paper" && playerSelection == "rock")
     ) {
         alert ("You lose! " + computerSelection + " beats " + playerSelection);
-        return "Computer Score: " + computerScore + "\nYour Score: " + playerScore;
+        return "Computer Score: " + ++computerScore + "\nYour Score: " + playerScore;
     } else {
         alert ("You win! " + playerSelection + " beats " + computerSelection);
-        return "Your Score: " + playerScore + "\nComputer Score: " + computerScore;
+        return "Your Score: " + ++playerScore + "\nComputer Score: " + computerScore;
     }
 }
 
@@ -99,14 +129,5 @@ function playRound(playerSelection, computerSelection) {
 
 
 
-console.log(playRound(playerSelection,computerSelection));
 
-game();
 
-function game() {
-    computerScore = 0;
-    playerScore = 0;
-    for (let i = 0; i < 5; i++) {
-        playRound(playerSelection,computerSelection);
-    }
-};
