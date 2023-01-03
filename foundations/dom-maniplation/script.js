@@ -15,3 +15,10 @@ const smallText = document.createElement('h3');
 smallText.textContent = 'I\'m a blue h3!';
 smallText.style.color = 'blue';
 container.appendChild(smallText);
+
+const moreContent = document.createElement('div');
+moreContent.style.cssText = 'background: pink; border-color: black;';
+
+const head = document.createElement('h1');
+head.textContent = 'I\'m a div';
+moreContent.appendChild(head);
