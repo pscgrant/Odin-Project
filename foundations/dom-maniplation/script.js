@@ -22,3 +22,9 @@ moreContent.style.cssText = 'background: pink; border-color: black;';
 const head = document.createElement('h1');
 head.textContent = 'I\'m a div';
 moreContent.appendChild(head);
+
+const secPara = document.createElement('p');
+secPara.textContent = 'ME TOO!';
+moreContent.appendChild(secPara);
+
+container.appendChild(moreContent);
