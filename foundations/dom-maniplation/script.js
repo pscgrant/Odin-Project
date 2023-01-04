@@ -17,7 +17,7 @@ smallText.style.color = 'blue';
 container.appendChild(smallText);
 
 const moreContent = document.createElement('div');
-moreContent.style.cssText = 'background: pink; border-color: black;';
+moreContent.style.cssText = 'background: pink; border-color: black; border-style: solid;';
 
 const head = document.createElement('h1');
 head.textContent = 'I\'m a div';
