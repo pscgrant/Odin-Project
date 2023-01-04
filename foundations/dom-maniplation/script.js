@@ -28,3 +28,6 @@ secPara.textContent = 'ME TOO!';
 moreContent.appendChild(secPara);
 
 container.appendChild(moreContent);
+
+const btn = document.querySelector('#btn');
+btn.onclick = () => alert("Hello World");
