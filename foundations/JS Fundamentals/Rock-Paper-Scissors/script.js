@@ -1,3 +1,5 @@
+//  Code for the game
+
 let playerScore;
 let computerScore;
 let playerSelection;
@@ -97,6 +99,15 @@ function playRound(playerSelection, computerSelection) {
         return "Your Score: " + ++playerScore + "\nComputer Score: " + computerScore;
     }
 }
+// ----------------------------------------------------------------------------------
+
+// Ui 
+
+
+
+
+
+
 
 
 
