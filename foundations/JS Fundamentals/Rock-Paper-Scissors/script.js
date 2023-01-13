@@ -86,7 +86,7 @@ function playRound(playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase();
     if (computerSelection == playerSelection) {
         alert ("It's a tie!");
-        return "Tie game\nCompter Score: " + computerScore + "\nYour Score: " + playerScore;
+        return "Tie game\nComputer Score: " + computerScore + "\nYour Score: " + playerScore;
     } else if (
         (computerSelection == "rock" && playerSelection == "scissors") ||
         (computerSelection == "scissors" && playerSelection == "paper") ||
@@ -102,8 +102,9 @@ function playRound(playerSelection, computerSelection) {
 // ----------------------------------------------------------------------------------
 
 // Ui 
-
-
+const rockBtn = document.getElementById('rockBtn');
+const paperBtn = document.getElementById('paperBtn');
+const scissorsBtn = document.getElementById('scissorsBtn');
 
 
 
