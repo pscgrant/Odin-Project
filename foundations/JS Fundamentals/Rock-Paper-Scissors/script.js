@@ -60,6 +60,7 @@ function playRound(playerSelection, computerSelection) {
         playerScore++
         roundWinner = 'player'
     }
+    updatedScoreMessage(roundWinner, playerSelection, computerSelection)
 };
 
 
