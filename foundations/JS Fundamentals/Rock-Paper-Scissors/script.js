@@ -68,31 +68,6 @@ function gameOver() {
 };
 
 
-
-
-
-
-
-/*
-This function is for the user to input
-*/
-
-function userInput() {
-    playerSelection = prompt("Enter your selection of Rock, Paper or Scissors");
-      if (
-          (playerSelection.toLowerCase() == 'rock') ||
-          (playerSelection.toLowerCase() == 'paper') ||
-          (playerSelection.toLowerCase() == 'scissors')
-      ) {
-          console.log(playRound(playerSelection,computerSelection));
-      } else {
-          alert ("That's not a valid choice");
-          userInput();
-      }
-}
-
-
-
 // ----------------------------------------------------------------------------------
 
 // Ui 
