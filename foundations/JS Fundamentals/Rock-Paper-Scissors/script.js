@@ -63,19 +63,6 @@ function playRound(playerSelection, computerSelection) {
 };
 
 
-function declareWinner() {
-    if (playerScore === computerScore){
-        alert (playerScore + "-"+ computerScore + "\nTie game!");
-        return playerScore + "-"+ computerScore + "\nTie game!";
-    } else if (playerScore > computerScore) {
-        alert (playerScore + "-" + computerScore + "\nYou win!");
-        return playerScore + "-" + computerScore + "\nYou win!";
-    } else {
-        alert (playerScore + "-" + computerScore + "\nSorry you lost");
-        return playerScore + "-" + computerScore + "\nSorry you lost";
-    }
-}
-
 function gameOver() {
     return playerScore === 5 || computerScore === 5
 };
