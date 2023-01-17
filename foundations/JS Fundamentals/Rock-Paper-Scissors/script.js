@@ -1,9 +1,10 @@
 //  Code for the game
 
-let playerScore;
-let computerScore;
+let playerScore = 0;
+let computerScore = 0;
 let playerSelection;
 let computerSelection;
+let roundWinner = ''
 
 game();
 
