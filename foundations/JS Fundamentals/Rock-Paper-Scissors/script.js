@@ -48,18 +48,17 @@ function playRound(playerSelection, computerSelection) {
     computerSelection = getComputerChoice().toLowerCase();
     playerSelection = playerSelection.toLowerCase();
     if (computerSelection == playerSelection) {
-        alert ("It's a tie!");
-        return "Tie game\nComputer Score: " + computerScore + "\nYour Score: " + playerScore;
+        roundWinner = 'tie'
     } else if (
         (computerSelection == "rock" && playerSelection == "scissors") ||
         (computerSelection == "scissors" && playerSelection == "paper") ||
         (computerSelection == "paper" && playerSelection == "rock")
     ) {
-        alert ("You lose! " + computerSelection + " beats " + playerSelection);
-        return "Computer Score: " + ++computerScore + "\nYour Score: " + playerScore;
+        computerScore++
+        roundWinner = 'computer'
     } else {
-        alert ("You win! " + playerSelection + " beats " + computerSelection);
-        return "Your Score: " + ++playerScore + "\nComputer Score: " + computerScore;
+        playerScore++
+        roundWinner = 'player'
     }
 };
 
