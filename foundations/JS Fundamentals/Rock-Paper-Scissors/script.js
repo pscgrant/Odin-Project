@@ -16,27 +16,11 @@ function game() {
 };
 console.log(declareWinner());
 
-
-function declareWinner() {
-    if (playerScore === computerScore){
-        alert (playerScore + "-"+ computerScore + "\nTie game!");
-        return playerScore + "-"+ computerScore + "\nTie game!";
-    } else if (playerScore > computerScore) {
-        alert (playerScore + "-" + computerScore + "\nYou win!");
-        return playerScore + "-" + computerScore + "\nYou win!";
-    } else {
-        alert (playerScore + "-" + computerScore + "\nSorry you lost");
-        return playerScore + "-" + computerScore + "\nSorry you lost";
-    }
-}
-
-
-
 /*
 This function is for the computer to randomly choose between
 rock, paper and scissor. Using a if else statement.
 */
- function getComputerChoice(){
+function getComputerChoice(){
     const randomNumber = Math.floor(Math.random() * 3);
     if (randomNumber == 1) {
         return "Rock";
@@ -46,28 +30,6 @@ rock, paper and scissor. Using a if else statement.
         return "Scissors";
     }
 };
-
-
-
-
-
-/*
-This function is for the user to input
-*/
-
-function userInput() {
-    playerSelection = prompt("Enter your selection of Rock, Paper or Scissors");
-      if (
-          (playerSelection.toLowerCase() == 'rock') ||
-          (playerSelection.toLowerCase() == 'paper') ||
-          (playerSelection.toLowerCase() == 'scissors')
-      ) {
-          console.log(playRound(playerSelection,computerSelection));
-      } else {
-          alert ("That's not a valid choice");
-          userInput();
-      }
-}
 
 
 /* This function will run the game.
@@ -99,6 +61,49 @@ function playRound(playerSelection, computerSelection) {
         return "Your Score: " + ++playerScore + "\nComputer Score: " + computerScore;
     }
 }
+
+
+function declareWinner() {
+    if (playerScore === computerScore){
+        alert (playerScore + "-"+ computerScore + "\nTie game!");
+        return playerScore + "-"+ computerScore + "\nTie game!";
+    } else if (playerScore > computerScore) {
+        alert (playerScore + "-" + computerScore + "\nYou win!");
+        return playerScore + "-" + computerScore + "\nYou win!";
+    } else {
+        alert (playerScore + "-" + computerScore + "\nSorry you lost");
+        return playerScore + "-" + computerScore + "\nSorry you lost";
+    }
+}
+
+
+
+
+
+
+
+
+
+/*
+This function is for the user to input
+*/
+
+function userInput() {
+    playerSelection = prompt("Enter your selection of Rock, Paper or Scissors");
+      if (
+          (playerSelection.toLowerCase() == 'rock') ||
+          (playerSelection.toLowerCase() == 'paper') ||
+          (playerSelection.toLowerCase() == 'scissors')
+      ) {
+          console.log(playRound(playerSelection,computerSelection));
+      } else {
+          alert ("That's not a valid choice");
+          userInput();
+      }
+}
+
+
+
 // ----------------------------------------------------------------------------------
 
 // Ui 
