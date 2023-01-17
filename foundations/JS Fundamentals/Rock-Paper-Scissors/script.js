@@ -60,7 +60,7 @@ function playRound(playerSelection, computerSelection) {
         alert ("You win! " + playerSelection + " beats " + computerSelection);
         return "Your Score: " + ++playerScore + "\nComputer Score: " + computerScore;
     }
-}
+};
 
 
 function declareWinner() {
@@ -76,7 +76,9 @@ function declareWinner() {
     }
 }
 
-
+function gameOver() {
+    return playerScore === 5 || computerScore === 5
+};
 
 
 
