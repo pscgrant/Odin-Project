@@ -6,16 +6,7 @@ let playerSelection;
 let computerSelection;
 let roundWinner = ''
 
-game();
 
-function game() {
-    computerScore = 0;
-    playerScore = 0;
-    for (let i = 0; i < 5; i++) {
-        userInput();
-    }
-};
-console.log(declareWinner());
 
 /*
 This function is for the computer to randomly choose between
