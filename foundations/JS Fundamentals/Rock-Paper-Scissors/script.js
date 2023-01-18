@@ -71,10 +71,16 @@ const computerPick = document.getElementById('computerPick');
 const rockBtn = document.getElementById('rockBtn');
 const paperBtn = document.getElementById('paperBtn');
 const scissorsBtn = document.getElementById('scissorsBtn');
+const endgameModal = document.getElementById('endgameModal');
+const endgameMsg = document.getElementById('endgameMessage');
+const overlay = document.getElementById('overlay');
+const restartBtn = document.getElementById('restartBtn');
 
 rockBtn.addEventListener('click', () => handleClick('rock'));
 paperBtn.addEventListener('click', () => handleClick('paper'));
 scissorsBtn.addEventListener('click',() => handleClick('scissors'));
+restartBtn.addEventListener('click', restartGame);
+overlay.addEventListener('click', closeEndgameModal);
 
 function handleClick(playerSelection) {
     if (gameOver()) {
