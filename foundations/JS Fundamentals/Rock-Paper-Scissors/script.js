@@ -34,12 +34,12 @@ Using just one else if instead of multiple else if and if then else inside is mu
 */
 
 function playRound(playerSelection, computerSelection) {
-    if (computerSelection == playerSelection) {
+    if (computerSelection === playerSelection) {
         roundWinner = 'tie'
     } else if (
-        (computerSelection == 'rock' && playerSelection == 'scissors') ||
-        (computerSelection == 'scissors' && playerSelection == 'paper') ||
-        (computerSelection == 'paper' && playerSelection == 'rock')
+        (computerSelection === 'rock' && playerSelection === 'scissors') ||
+        (computerSelection === 'scissors' && playerSelection === 'paper') ||
+        (computerSelection === 'paper' && playerSelection === 'rock')
     ) {
         computerScore++
         roundWinner = 'computer'
