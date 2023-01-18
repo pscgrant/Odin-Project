@@ -72,7 +72,7 @@ const rockBtn = document.getElementById('rockBtn');
 const paperBtn = document.getElementById('paperBtn');
 const scissorsBtn = document.getElementById('scissorsBtn');
 const endgameModal = document.getElementById('endgameModal');
-const endgameMsg = document.getElementById('endgameMessage');
+const endgameMessage = document.getElementById('endgameMessage');
 const overlay = document.getElementById('overlay');
 const restartBtn = document.getElementById('restartBtn');
 
@@ -159,6 +159,38 @@ function updatedScoreMessage(winner, playerSelection, computerSelection) {
     )} ties with ${computerSelection.toLowerCase()}`
 };
 
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+};
+
+function openEndgameModal() {
+    endgameModal.classList.add('active');
+    overlay.classList.add('active');
+};
+
+function closeEndgameModal() {
+    endgameModal.classList.remove('active');
+    overlay.classList.remove('active');
+};
+
+function setFinalMessage() {
+    return playerScore > computerScore
+      ? (endgameMessage.textContent = 'You won!')
+      : (endgameMessage.textContent = 'You lost, Sorry')
+};
+
+function restartGame() {
+    playerScore = 0;
+    computerScore = 0;
+    scoreInfo.textContent = 'Choose your weapon';
+    scoreMessage.textContent = 'First to score 5 points wins';
+    playerScorePara.textContent = 'Player: 0';
+    computerScorePara.textContent = 'Computer: 0';
+    playerPick.textContent = '❔';
+    computerPick.textContent = '❔';
+    endgameModal.classList.remove('active');
+    overlay.classList.remove('active');
+};
 //This is the first attempt at the function creating 
 
 // function playRound(playerSelection, computerSelection) {
