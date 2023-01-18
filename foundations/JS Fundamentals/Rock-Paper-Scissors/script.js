@@ -13,11 +13,11 @@ rock, paper and scissor. Using a if else statement.
 function getComputerChoice(){
     const randomNumber = Math.floor(Math.random() * 3);
     if (randomNumber == 1) {
-        return "Rock";
+        return 'rock';
     } else if (randomNumber == 2) {
-        return "Paper";
+        return 'paper';
     } else {
-        return "Scissors";
+        return 'scissors';
     }
 };
 
