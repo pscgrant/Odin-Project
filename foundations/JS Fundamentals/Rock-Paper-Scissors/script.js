@@ -86,7 +86,31 @@ function handleClick(playerSelection) {
     }
 };
 
+function updateChoices(playerSelection, computerSelection) {
+    switch (playerSelection) {
+        case 'rock':
+            playerPick.textContent = '✊';
+            break;
+        case 'paper':
+            playerPick.textContent = '✋';
+            break;
+        case 'scissors':
+            playerPick.textContent = '✌';
+            break;
+    };
 
+    switch (computerSelection) {
+        case 'rock':
+            computerPick.textContent = '✊';
+            break;
+        case 'paper':
+            computerPick.textContent = '✋';
+            break;
+        case 'scissors':
+            computerPick.textContent = '✌';
+            break;
+    };
+};
 
 
 
