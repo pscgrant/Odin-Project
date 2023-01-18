@@ -140,7 +140,24 @@ function updateScore() {
 
 };
 
+function updatedScoreMessage(winner, playerSelection, computerSelection) {
+    if (winner === 'player') {
+        scoreMessage.textContent = `${capitalizeFirstLetter(
+            playerSelection
+        )} beats ${computerSelection.toLowerCase()}`
+        return
+    };
+    if (winner === 'computer') {
+        scoreMessage.textContent = `${capitalizeFirstLetter(
+            playerSelection
+        )} is beaten by ${computerSelection.toLowerCase()}`
+        return
+    }
 
+    scoreMessage.textContent = `${capitalizeFirstLetter(
+        playerSelection
+    )} ties with ${computerSelection.toLowerCase()}`
+};
 
 //This is the first attempt at the function creating 
 
