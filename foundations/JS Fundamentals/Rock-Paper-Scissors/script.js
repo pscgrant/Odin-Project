@@ -120,6 +120,11 @@ function updateScore() {
     } else if (roundWinner === 'computer') {
         scoreInfo.textContent = 'You lost!';
     };
+
+
+    playerScorePara.textContent = `Player: ${playerScore}`;
+    computerScorePara.textContent = `Computer: ${computerScore}`;
+
 };
 
 
