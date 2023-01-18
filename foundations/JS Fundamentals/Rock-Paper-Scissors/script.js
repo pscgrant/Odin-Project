@@ -2,8 +2,6 @@
 
 let playerScore = 0;
 let computerScore = 0;
-let playerSelection;
-let computerSelection;
 let roundWinner = ''
 
 
@@ -71,7 +69,22 @@ rockBtn.addEventListener('click', () => handleClick('rock'));
 paperBtn.addEventListener('click', () => handleClick('paper'));
 scissorsBtn.addEventListener('click',() => handleClick('scissors'));
 
+function handleClick(playerSelection) {
+    if (gameOver()) {
+        openEndgameModal()
+        return
+    };
 
+    const computerSelection = getComputerChoice();
+    playRound(playerSelection, computerSelection);
+    updateChoices(playerSelection, computerSelection);
+    updateScore();
+
+    if (gameOver()) {
+        openEndgameModal();
+        setFinalMessage();
+    }
+};
 
 
 
