@@ -34,8 +34,6 @@ Using just one else if instead of multiple else if and if then else inside is mu
 */
 
 function playRound(playerSelection, computerSelection) {
-    computerSelection = getComputerChoice().toLowerCase();
-    playerSelection = playerSelection.toLowerCase();
     if (computerSelection == playerSelection) {
         roundWinner = 'tie'
     } else if (
