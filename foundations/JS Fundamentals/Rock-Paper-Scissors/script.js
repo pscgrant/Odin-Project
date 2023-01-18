@@ -112,6 +112,16 @@ function updateChoices(playerSelection, computerSelection) {
     };
 };
 
+function updateScore() {
+    if (roundWinner === 'tie') {
+        scoreInfo.textContent = "It's a tie!";
+    } else if (roundWinner === 'player') {
+        scoreInfo.textContent = 'You won!';
+    } else if (roundWinner === 'computer') {
+        scoreInfo.textContent = 'You lost!';
+    };
+};
+
 
 
 //This is the first attempt at the function creating 
