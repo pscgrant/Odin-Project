@@ -62,8 +62,8 @@ function gameOver() {
 
 const scoreInfo = document.getElementById('scoreInfo');
 const scoreMessage = document.getElementById('scoreMessage');
-const playerScorePara = document.getElementById('playerScorePara');
-const computerScorePara = document.getElementById('computerScorePara');
+const playerScorePara = document.getElementById('playerScore');
+const computerScorePara = document.getElementById('computerScore');
 const playerPick = document.getElementById('playerPick');
 const computerPick = document.getElementById('computerPick');
 const rockBtn = document.getElementById('rockBtn');
