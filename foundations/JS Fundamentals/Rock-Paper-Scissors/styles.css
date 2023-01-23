@@ -100,3 +100,20 @@ button {
     font-size: 80px;
     margin-bottom: 10px;
 }
+
+/* Modal */
+.modal {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #313b41;
+    text-align: center;
+    font-size: 30px;
+    user-select: none;
+    transform: translate(-50%, -50%) scale(1);
+    transition: 200ms ease-in-out;
+}
