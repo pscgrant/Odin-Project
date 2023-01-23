@@ -45,3 +45,8 @@ button {
 .score-info {
     font-size: 32px;
 }
+
+.score-message {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
