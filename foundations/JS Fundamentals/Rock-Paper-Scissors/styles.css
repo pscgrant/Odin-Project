@@ -31,3 +31,10 @@ button {
     font-size: 32px;
     color: #3282B8;
 }
+
+/* Main */
+.main {
+    margin-top: 40px;
+    text-align: center;
+}
+
