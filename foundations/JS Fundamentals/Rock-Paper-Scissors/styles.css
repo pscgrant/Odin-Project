@@ -38,3 +38,10 @@ button {
     text-align: center;
 }
 
+.scoreboard {
+    margin-bottom: 15px;
+}
+
+.score-info {
+    font-size: 32px;
+}
