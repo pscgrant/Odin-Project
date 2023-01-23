@@ -127,3 +127,8 @@ button {
     font-weight: bold;
 }
 
+.btn-restart {
+    padding: 10px 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
