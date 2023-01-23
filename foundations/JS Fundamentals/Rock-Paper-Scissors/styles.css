@@ -63,3 +63,10 @@ button {
 .score-box {
     width: 170px;
 }
+
+.score {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
