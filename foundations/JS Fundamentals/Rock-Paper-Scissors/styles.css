@@ -70,3 +70,33 @@ button {
     font-size: 22px;
     font-weight: bold;
 }
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn {
+    border-radius: 10px;
+    background-color: #1B262C;
+}
+
+.btn-square {
+    width: 160px;
+    height: 160px;
+}
+
+.btn:hover {
+    background-color: #313b41;
+}
+
+.btn:active {
+    background-color: #485156;
+}
+
+.pick {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
