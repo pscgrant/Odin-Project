@@ -147,3 +147,31 @@ button {
 .overlay.active {
     display: block;
 }
+
+/* Media Queries */
+@media (max-width: 550px) {
+    .title {
+        font-size: 18px;
+    }
+
+    .score-info {
+        font-size: 26px;
+    }
+
+    .buttons {
+        gap: 10px;
+    }
+
+    .btn-square {
+        width: 100px;
+        height: 100px;
+    }
+
+    .pick {
+        font-size: 50px;
+    }
+
+    .modal {
+        width: 95%;
+    }
+}
