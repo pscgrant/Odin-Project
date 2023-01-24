@@ -4,24 +4,6 @@ let playerScore = 0;
 let computerScore = 0;
 let roundWinner = ''
 
-
-
-/*
-This function is for the computer to randomly choose between
-rock, paper and scissor. Using a if else statement.
-*/
-function getComputerChoice(){
-    const randomNumber = Math.floor(Math.random() * 3);
-    if (randomNumber == 1) {
-        return 'rock';
-    } else if (randomNumber == 2) {
-        return 'paper';
-    } else {
-        return 'scissors';
-    }
-};
-
-
 /* This function will run the game.
 Taking two parameters the playerSelection and computerSelection,
 and returning a string that declares the winner 
@@ -50,6 +32,20 @@ function playRound(playerSelection, computerSelection) {
     updatedScoreMessage(roundWinner, playerSelection, computerSelection)
 };
 
+/*
+This function is for the computer to randomly choose between
+rock, paper and scissor. Using a if else statement.
+*/
+function getComputerChoice(){
+    const randomNumber = Math.floor(Math.random() * 3);
+    if (randomNumber == 1) {
+        return 'rock';
+    } else if (randomNumber == 2) {
+        return 'paper';
+    } else {
+        return 'scissors';
+    }
+};
 
 function gameOver() {
     return playerScore === 5 || computerScore === 5
