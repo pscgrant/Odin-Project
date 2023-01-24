@@ -94,7 +94,7 @@ function handleClick(playerSelection) {
     if (gameOver()) {
         openEndgameModal();
         setFinalMessage();
-    }
+    };
 };
 
 function updateChoices(playerSelection, computerSelection) {
@@ -150,7 +150,7 @@ function updatedScoreMessage(winner, playerSelection, computerSelection) {
             playerSelection
         )} is beaten by ${computerSelection.toLowerCase()}`
         return
-    }
+    };
 
     scoreMessage.textContent = `${capitalizeFirstLetter(
         playerSelection
